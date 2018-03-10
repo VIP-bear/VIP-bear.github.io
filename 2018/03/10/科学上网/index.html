@@ -123,13 +123,13 @@
 
 
 
-<meta name="description" content="我用的系统是：centos-6-x86_64-bbrcentos6的应该都可以进入服务器 更换内核版本默认是你安装系统是的版本查看当前内核版本：1uname -r 如果版本不是2.6.32-504.3.3.el6.x86_64，请输入以下代码安装：123rpm -ivh http://xz.wn789.com/CentOSkernel/kernel-firmware-2.6.32-504.3.3.">
+<meta name="description" content="我用的系统是：centos-6-x86_64-bbrcentos6的应该都可以进入服务器 更换内核版本默认是你安装系统的版本查看当前内核版本：1uname -r 如果版本不是2.6.32-504.3.3.el6.x86_64，请输入以下代码进行安装：123rpm -ivh http://xz.wn789.com/CentOSkernel/kernel-firmware-2.6.32-504.3.3">
 <meta name="keywords" content="SSR,科学上网">
 <meta property="og:type" content="article">
 <meta property="og:title" content="KVM安装SSR和锐速">
 <meta property="og:url" content="http://yoursite.com/2018/03/10/科学上网/index.html">
 <meta property="og:site_name" content="blogbear">
-<meta property="og:description" content="我用的系统是：centos-6-x86_64-bbrcentos6的应该都可以进入服务器 更换内核版本默认是你安装系统是的版本查看当前内核版本：1uname -r 如果版本不是2.6.32-504.3.3.el6.x86_64，请输入以下代码安装：123rpm -ivh http://xz.wn789.com/CentOSkernel/kernel-firmware-2.6.32-504.3.3.">
+<meta property="og:description" content="我用的系统是：centos-6-x86_64-bbrcentos6的应该都可以进入服务器 更换内核版本默认是你安装系统的版本查看当前内核版本：1uname -r 如果版本不是2.6.32-504.3.3.el6.x86_64，请输入以下代码进行安装：123rpm -ivh http://xz.wn789.com/CentOSkernel/kernel-firmware-2.6.32-504.3.3">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/03/10/科学上网/微信图片_20180310160036.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/10/科学上网/微信图片_20180310155939.png">
@@ -141,10 +141,10 @@
 <meta property="og:image" content="http://yoursite.com/2018/03/10/科学上网/微信图片_20180310160143.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/10/科学上网/微信图片_20180310160204.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/10/科学上网/微信图片_20180310160214.png">
-<meta property="og:updated_time" content="2018-03-10T08:11:32.448Z">
+<meta property="og:updated_time" content="2018-03-10T08:20:53.562Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="KVM安装SSR和锐速">
-<meta name="twitter:description" content="我用的系统是：centos-6-x86_64-bbrcentos6的应该都可以进入服务器 更换内核版本默认是你安装系统是的版本查看当前内核版本：1uname -r 如果版本不是2.6.32-504.3.3.el6.x86_64，请输入以下代码安装：123rpm -ivh http://xz.wn789.com/CentOSkernel/kernel-firmware-2.6.32-504.3.3.">
+<meta name="twitter:description" content="我用的系统是：centos-6-x86_64-bbrcentos6的应该都可以进入服务器 更换内核版本默认是你安装系统的版本查看当前内核版本：1uname -r 如果版本不是2.6.32-504.3.3.el6.x86_64，请输入以下代码进行安装：123rpm -ivh http://xz.wn789.com/CentOSkernel/kernel-firmware-2.6.32-504.3.3">
 <meta name="twitter:image" content="http://yoursite.com/2018/03/10/科学上网/微信图片_20180310160036.png">
 
 
@@ -387,19 +387,19 @@
 
       
         <p>我用的系统是：centos-6-x86_64-bbr<br>centos6的应该都可以<br>进入服务器</p>
-<h3 id="更换内核版本"><a href="#更换内核版本" class="headerlink" title="更换内核版本"></a>更换内核版本</h3><p>默认是你安装系统是的版本<br>查看当前内核版本：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -r</span><br></pre></td></tr></table></figure></p>
-<p>如果版本不是<strong>2.6.32-504.3.3.el6.x86_64</strong>，请输入以下代码安装：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rpm -ivh http://xz.wn789.com/CentOSkernel/kernel-firmware-2.6.32-504.3.3.el6.noarch.rpm</span><br><span class="line"></span><br><span class="line">rpm -ivh http://xz.wn789.com/CentOSkernel/kernel-2.6.32-504.3.3.el6.x86_64.rpm --force</span><br></pre></td></tr></table></figure></p>
-<p>查看已经安装好的内核版本：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /boot/grub/grub.conf | awk &apos;$1==&quot;title&quot; &#123;print i++ &quot; : &quot; $NF&#125;&apos;</span><br></pre></td></tr></table></figure></p>
-<img src="/2018/03/10/科学上网/微信图片_20180310160036.png" title="image">
+<h3 id="更换内核版本"><a href="#更换内核版本" class="headerlink" title="更换内核版本"></a>更换内核版本</h3><p>默认是你安装系统的版本<br>查看当前内核版本：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -r</span><br></pre></td></tr></table></figure></p>
+<p>如果版本不是<strong>2.6.32-504.3.3.el6.x86_64</strong>，请输入以下代码进行安装：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rpm -ivh http://xz.wn789.com/CentOSkernel/kernel-firmware-2.6.32-504.3.3.el6.noarch.rpm</span><br><span class="line"></span><br><span class="line">rpm -ivh http://xz.wn789.com/CentOSkernel/kernel-2.6.32-504.3.3.el6.x86_64.rpm --force</span><br></pre></td></tr></table></figure></p>
+<p><-- !more="" --=""><br>查看已经安装好的内核版本：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /boot/grub/grub.conf | awk &apos;$1==&quot;title&quot; &#123;print i++ &quot; : &quot; $NF&#125;&apos;</span><br></pre></td></tr></table></figure></--></p>
+<img src="/2018/03/10/科学上网/微信图片_20180310160036.png">
 <p>更换成所需的版本：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /boot/grub/grub.conf</span><br></pre></td></tr></table></figure></p>
-<p>按<strong>i</strong>进入编辑，然后操控上下左右键，将<strong>default</strong>的值改成所需版本，按Esc键推出编辑<br><img src="/2018/03/10/科学上网/微信图片_20180310155939.png" title="image"><br>输入<em>**:wq!</em>按回车键。<br><img src="/2018/03/10/科学上网/微信图片_20180310160025.png" title="image"><br>重启：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure></p>
+<p>按<strong>i</strong>进入编辑，然后操控上下左右键，将<strong>default</strong>的值改成所需版本对应的值，按Esc键推出编辑<br><img src="/2018/03/10/科学上网/微信图片_20180310155939.png"><br>输入<em>**:wq!</em>按回车键保存<br><img src="/2018/03/10/科学上网/微信图片_20180310160025.png"><br>重启：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure></p>
 <p>再查看当前版本：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -r</span><br></pre></td></tr></table></figure></p>
 <h3 id="卸载内核"><a href="#卸载内核" class="headerlink" title="卸载内核"></a>卸载内核</h3><p>卸载你不想要的内核，这里以2.6.32-642.el6.x86_64为例:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum remove kernel-2.6.32-642.el6.x86_64</span><br></pre></td></tr></table></figure></p>
 <p>按回车键</p>
 <h3 id="安装SSR"><a href="#安装SSR" class="headerlink" title="安装SSR"></a>安装SSR</h3><p>依次输入以下代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">yum -y install wget</span><br><span class="line"></span><br><span class="line">wget –no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh</span><br><span class="line"></span><br><span class="line">chmod +x shadowsocksR.sh </span><br><span class="line"></span><br><span class="line">./shadowsocksR.sh 2&gt;&amp;1 | tee shadowsocksR.log</span><br></pre></td></tr></table></figure></p>
-<p>设置密码，按回车键是默认密码<br><img src="/2018/03/10/科学上网/微信图片_20180310160106.png" title="image"><br>选择远程端口，按回车键是默认端口<br><img src="/2018/03/10/科学上网/微信图片_20180310160120.png" title="image"><br>其它的按回车键默认就可以了最后等待几分钟安装<br><img src="/2018/03/10/科学上网/微信图片_20180310160134.png" title="image"><br><img src="/2018/03/10/科学上网/微信图片_20180310160156.png" title="image"><br><img src="/2018/03/10/科学上网/微信图片_20180310160143.png" title="image"><br>最后按回车键等待几分钟安装<br><img src="/2018/03/10/科学上网/微信图片_20180310160204.png" title="image"></p>
+<p>设置密码，按回车键是默认密码<br><img src="/2018/03/10/科学上网/微信图片_20180310160106.png"><br>选择远程端口，按回车键是默认端口<br><img src="/2018/03/10/科学上网/微信图片_20180310160120.png"><br>其它的按回车键默认就可以<br><img src="/2018/03/10/科学上网/微信图片_20180310160134.png"><br><img src="/2018/03/10/科学上网/微信图片_20180310160156.png"><br><img src="/2018/03/10/科学上网/微信图片_20180310160143.png"><br>最后按回车键等待几分钟安装<br><img src="/2018/03/10/科学上网/微信图片_20180310160204.png"><br>安装完成会有一张表格，最好拍下来</p>
 <h3 id="安装锐速"><a href="#安装锐速" class="headerlink" title="安装锐速"></a>安装锐速</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/wn789/serverspeeder/master/serverspeeder.sh</span><br><span class="line"></span><br><span class="line">bash serverspeeder.sh</span><br></pre></td></tr></table></figure>
-<img src="/2018/03/10/科学上网/微信图片_20180310160214.png" title="image">
+<img src="/2018/03/10/科学上网/微信图片_20180310160214.png">
 <p>最后下载客户端就可以使用了，选择PAC模式，绕过局域网和大陆地址代理规则比较好</p>
 
       
